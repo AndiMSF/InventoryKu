@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --almost-black: #1C1D21; 
+    --purple: #925FE2;
+    --button-purple:#9C6FE4; 
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.50); 
+    font-size: 1rem;
+}
+
+body {
+    background-color: #000;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+form {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    border : 0px solid rgba(255, 255, 255, 0.40);
+    border-bottom-width : 1px;
+    background-color : transparent;
+    color: #FFFFFF;
+}
+
+button {
+    display: flex;
+    width: 100%;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    border-radius: 12px;
+    background-color: #9C6FE4;
+    border: none;
+    color: #FFFFFF;
+    border: 1px solid var(--button-purple) ;
+}
+
+button:hover {
+    transition: all 400ms ease;
+    background-color: transparent;
+}
+
+.div__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login__container {
+    border-radius: 24px;
+    overflow: hidden;
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    flex-direction: row;
+}
+
+.login__information {
+    width: 40%;
+    background-color: var(--almost-black);
+    color: #FFFFFF;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.first_second_div {
+    margin-top: auto;
+}
+
+.first_second_div.second {
+    margin-top: 0;
+}
+
+
+.login__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: auto;
+
+}
+
+.login__bottom a {
+    display: flex;
+    width: 100px;
+    padding: 12px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    border-radius: 8px;
+    background: #333437; 
+}
+
+.login__image {
+    width: 60%;
+    background-color: var(--purple);
+    position: relative;
+}
+
+.svg1 {
+    width: 79.952rem;
+    height: 59.185rem;
+    transform: rotate(-26.479deg);
+    flex-shrink: 0; 
+}
+
+.svg2 {
+    position: absolute; 
+    top:-80px; 
+    left: -80px; 
+    transform: rotate(-26.479deg);
+    width: 26.324rem;
+    height: 24.313rem;
+    flex-shrink: 0; fill: #9C6FE4;  
+}
+
+.svg3 {
+    position: absolute; 
+    top:-80px; 
+    right: 80px; 
+    width: 16.932rem;
+    height: 18.972rem;
+    transform: rotate(-49.894deg);
+    flex-shrink: 0;  fill: rgba(156, 111, 228, 0.60);
+}
+
+.svg4 {
+    position: absolute; 
+    bottom:-80px; 
+    left: 90px; 
+    fill: rgba(156, 111, 228, 0.60); 
+    width: 13.563rem;
+    height: 12.526rem;
+    flex-shrink: 0;
+    transform: rotate(100.894deg);
+}
+
+
+@media (max-width: 801px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .login__container {
+        flex-direction: column;
+        width: 80vw;
+
+    }
+    .div__center {
+        padding: 0px !important;
+    }
+
+    .login__information {
+        width: 100%;
+        height: 90%;
+        padding: 3.5rem !important;
+    }
+
+    .login__bottom {
+        flex-direction: column;
+    }
+    .login__image {
+        width: 100%;
+        height: 10%;
+    }
+
+    .svg2 {
+        top:5px;
+    }
+
+    .svg3 {
+        width: 16rem;
+    }
+    
+}
+
+@media (max-width:1281px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .login__bottom {
+        flex-direction: column;
+    }
+
+    .div__center {
+        padding: 4rem;
+    }
+
+    .svg2 {
+        width: 15rem;
+        top: -120px;
+    }
+
+    .svg3 {
+        right: -100px
+    }
+
+}
+
