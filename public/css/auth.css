@@ -133,6 +133,34 @@ button:hover {
     width: 60%;
     background-color: var(--purple);
     position: relative;
+    display: flex;
+}
+
+.login__image__description {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 999;
+    align-self: center;
+    position: absolute;
+    top: 100px;
+    margin: 0 4rem;
+}
+
+.login__image__description h1 {
+    color: #EEE;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 87.5% */ 
+}
+
+.login__image__description span {
+    color: #EEE;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
 }
 
 .svg1 {
@@ -206,6 +234,21 @@ button:hover {
     .svg3 {
         width: 16rem;
     }
+
+    .login__image__description {
+        display: flex;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .login__image__description h1, .login__image__description span {
+        font-size: 1rem !important;
+
+    }
     
 }
 
@@ -228,5 +271,8 @@ button:hover {
         right: -100px
     }
 
+    .login__image__description h1, .login__image__description span {
+        font-size: 3.25rem;
+    }
 }
 
